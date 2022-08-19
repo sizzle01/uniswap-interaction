@@ -5,10 +5,10 @@ async function main() {
   const Storage = await ethers.getContractFactory("Storage");
   const storage = await Storage.deploy();
 
-
   console.log(`My contract was deployed to:  ${storage.address}`);
 
  await storage.store(10);
+ await storage.addPerson("Jane", 100);
 
 }
 
