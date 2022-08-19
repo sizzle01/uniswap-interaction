@@ -7,6 +7,9 @@ async function main() {
 
 
   console.log(`My contract was deployed to:  ${storage.address}`);
+
+ await storage.store(10);
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere
